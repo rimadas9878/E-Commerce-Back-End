@@ -12,6 +12,7 @@ ProductTag.init(
       primaryKey: true,
       autoIncrement: true
     },
+    //This is a forign key, this is to establish relationship with id column from product table
     product_id: {
       type: DataTypes.INTEGER,
       references: {
@@ -20,6 +21,7 @@ ProductTag.init(
         unique: false
       }
     },
+    //This is a forign key, this is to establish relationship with id column from tag table
     tag_id: {
       type: DataTypes.INTEGER,
       references: {
